@@ -1,0 +1,17 @@
+llm_config:
+  model: "gemini/gemini-pro"
+host_config:
+  host: "0.0.0.0"
+  port: 8000
+sources:
+  #- google_drive_folder:
+  #  kind: gdrive
+   # config:
+   #   object_id: "1ZDdmqwSjVhV5iALSQxZ3plyTOyArsj9l" # folder used in the managed demo
+    #  service_user_credentials_file: ./credentials.json
+    #  refresh_interval: 5
+  - local_files:
+    kind: local
+    config:
+      path: "data/"
+  
